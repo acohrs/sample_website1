@@ -1,0 +1,310 @@
+
+@media screen and (max-width: 400px) {
+	body {
+		background: white;
+	}
+
+	.main_nav {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	#nav_img1 {
+		padding: 12px;
+		width: 50%;
+	}
+
+	.main_nav a:active {
+		background-color: #279ae1;
+		transition: 1s;
+	}
+
+	#nav_img2 {
+		width: 15%;
+	}
+
+	.hidden_nav {
+		display: none; 
+		width: 100%;
+	}
+	
+	.hidden_nav a {	
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		text-decoration: none;
+		font-family: 'Lato',sans-serif;	
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+	.hidden_nav a:active {
+		background-color: #279ae1;
+		color:white;
+		transition: 1s;
+	}
+
+	nav a{
+		text-decoration: none;
+		font-family: 'Lato', sans-serif;
+		color: #6d6e70;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 5%;
+	}
+
+	.img_box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 250px;
+		margin: auto;
+		background-size: 100% 100%;
+		color: white;
+		font-size: 2em;
+		border-radius: 5px;
+		margin-bottom: 5%;
+	}
+
+	.img_box h2 {
+		visibility: hidden;
+		transition: 0.1s;
+	}
+
+	.img_box a{
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: #279ae1;
+		border-radius: 5px;
+		color: white;
+		visibility: hidden;
+		transition: 0.1s;
+	}
+
+	#img_box1 {
+		background-image: url("../img/london.jpg");
+	}
+
+	#img_box2 {
+		background-image: url("../img/dublin.jpg");
+	}
+
+	#img_box3 {
+		background-image: url("../img/biarritz.jpg");
+	}
+
+	#img_box4 {
+		display: none;
+	}
+
+	#img_box5 {
+		display: none;
+	}
+
+	.img_box p {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.mask {
+		background-color: #6d6e70;
+		width: 100%;
+		height: 250px;
+		border-radius: 5px;
+		opacity: 0.9;
+		visibility: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		transition: 0.1s;
+	}
+
+	.img_box:hover .mask{
+		visibility: visible;
+	}
+
+	.img_box:hover h2 {
+		visibility: visible;
+	}
+
+	.img_box:hover a {
+		visibility: visible;
+	}
+
+	.footer {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footer img {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
+/*------------------------------------------------------------------------*/
+
+@media screen and (min-width: 400px) {
+	nav {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		font-family: 'Lato' sans-serif;
+		background-color: white;
+	}
+
+	.main_nav {
+		width: 40%;
+		text-align: center;
+	}
+
+	#nav_img2 {
+		display: none;
+	}
+
+	#nav_img1 {
+		width: 50%;
+		padding: 10px 20px;
+		margin: 0;
+		border-radius: 10px;
+		margin-top: 10px;
+	}
+
+	#nav_img1:hover {
+		background-color: lightblue;
+		transition: 2s;
+	}
+
+	.hidden_nav a:hover {
+		background-color: lightblue;
+		transition: 2s;
+	}
+
+	.hidden_nav {
+		width: 60%;
+	}
+
+	.hidden_nav a {	
+		text-decoration: none;
+		color: #6d6e70;
+		font-size: 20px;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: row wrap;
+		align-items: center;
+	}
+
+	.img_box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		height: 250px;
+		margin: 2%;
+		background-size: 100% 100%;
+		color: white;
+		font-size: 2em;
+		border-radius: 5px;
+		margin-bottom: 5%;
+	}
+
+	.img_box h2 {
+		visibility: hidden;
+		transition: 0.1s;
+	}
+
+	.img_box p {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.img_box a{
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: #279ae1;
+		border-radius: 5px;
+		color: white;
+		visibility: hidden;
+		transition: 0.1s;
+	}
+
+	#img_box1 {
+		background-image: url("../img/london.jpg");
+	}
+
+	#img_box2 {
+		background-image: url("../img/dublin.jpg");
+	}
+
+	#img_box3 {
+		display: none;	
+	}
+
+	#img_box4 {
+		background-image: url("../img/belfast.jpg");
+	}
+
+	#img_box5 {
+		background-image: url("../img/biarritz.jpg");
+	}
+
+	.mask {
+		background-color: #6d6e70;
+		width: 100%;
+		height: 250px;
+		border-radius: 5px;
+		opacity: 0.9;
+		visibility: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		transition: 0.1s;
+	}
+
+	.img_box:hover .mask{
+		visibility: visible;
+	}
+
+	.img_box:hover h2 {
+		visibility: visible;
+	}
+
+	.img_box:hover a {
+		visibility: visible;
+	}
+
+	.footer {
+		float: right;
+		margin-right: 5%;
+	}
+
+	.footer img {
+		width: 50px;
+		height: 50px;
+	}
+
+}
