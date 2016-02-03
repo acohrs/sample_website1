@@ -1,0 +1,106 @@
+<!DOCTYPE html-5>
+<html>
+	<head>
+
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<meta charset ="UTF-8">
+
+		<!-- meta viewport to ensure page width is equal to width of the device -->
+		<meta name= "viewport" content="width=device-width, initial-scale=1">
+
+		<!-- reset css link -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"> 
+
+		<!-- reg css link -->
+		<link rel= "stylesheet" href= "css/reg.css">
+
+		<!-- navbar css link -->
+		<link rel= "stylesheet" href= "css/navbar.css">
+
+		<!-- lato font link -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+		<!-- javascript link -->
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<div class="main_nav">
+				<a href="#"><img src="img/logo.png" id = "nav_img1"></a>
+				<img src="img/menu.png" id = "nav_img2">
+			</div>
+			
+			<div class="hidden_nav">	
+				<a href="#">Register</a>	
+				<a href="#">Destinations</a>
+				<a href="#">Hosting</a>
+				<a href="#">Log In</a>
+				<a href="#">About Us</a>
+			</div>
+		</nav>
+		
+
+		<div class= "formcontainer">
+			<form id="UserRegForm" action="server_side_Script.php" method= "get">
+				<fieldset>
+					<legend>Registration</legend>
+
+					<p>
+						<label for= "firstname">Firstname:</label>
+						<input type= "text" name= "fname" autofocus required/>	
+					</p>
+
+					<p>
+						<label for= "surname">Surname:</label>
+						<input type= "text" name= "sname" required/>
+					</p>	
+
+					<p>
+						<label for= "email">Email:</label>
+						<input type= "email" name= "email" required/>
+					</p>
+
+					<p>
+						<label for= "phone">Phone:</label>
+						<input type= "tel" pattern = "[0][8][0-9]{8}" name= "email" required/>
+					</p>
+
+					<p>
+						<label for= "nationality" class= "field">Nationality:</label>
+						<select id= "idnationality">
+							<optgroup label= "Popular">
+								<option value= "British">British</option>
+								<option value= "Irish">Irish</option>
+								<option value= "Northern Irish">Northern Irish</option>
+							</optgroup>
+							<optgroup label= "Other Nationalities">
+								<option value= "American">American</option>
+								<option value= "Australian">Australian</option>
+								<option value= "Canadian">Canadian</option>
+								<option value= "Chinese">Chinese</option>
+								<option value= "Indian">Indian</option>
+								<option value= "Italian">Italian</option>
+							</optgroup>
+						</select>
+					</p>
+					<input type= "submit" value= "Submit" id= "submit"/>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="footer">
+			<a href="http://www.facebook.com">
+				<img src="img/icons/fb.png"></a>
+			<a href="http://www.linkedin.com">
+				<img src="img/icons/linkedin.png"></a>
+			<a href="http://www.twitter.com">
+				<img src="img/icons/twit.png"></a>
+			<a href="http://www.instagram.com">
+				<img src="img/icons/insta.png" id="insta_p"></a>
+		</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

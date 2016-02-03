@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset ="UTF-8">
+
+		<!-- meta viewport to ensure page width is equal to width of the device -->
+		<meta name= "viewport" content="width=device-width, initial-scale=1">
+
+		<!-- reset css link -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"> 
+
+		<!-- landing css link -->
+		<link rel="stylesheet" type="text/css" href="css/info.css">
+
+		<!-- lato font link -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+		<!-- javascript link -->
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+
+		<!-- d3 link -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="main_nav">
+				<a href="#"><img src="img/logo.png" id = "nav_img1"></a>
+				<img src="img/menu.png" id = "nav_img2">
+			</div>
+			
+			<div class="hidden_nav">	
+				<a href="reg.html">Register</a>	
+				<a href="destinations.html">Destinations</a>
+				<a href="#">Hosting</a>
+				<a href="#">Log In</a>
+				<a href="info.html">About Us</a>
+			</div>
+		</nav>
+
+	<div class="container">
+		<h1>Homestay&copy;</h1>
+		<script>
+			var myData = [10,20,30,40,50,60,70,10,20,30,40,50,60,70,70,60,50,40,30,20,10];
+
+			var svg = d3.select("body")
+				.append("svg")
+				.attr("width", 1000)
+				.attr("height", 400)
+				.attr("style", "background-color: #ddd");
+
+			svg.selectAll("rect")
+				.data(myData)
+				.enter()
+				.append("rect")
+				.attr("x", function(d,i){return i * (30+1);})
+				.attr("y", 20)
+				.attr("width", 20)
+				.attr("height", function(d){return d * 5});
+		</script>
+	</div>
+
+		<div class="footer">
+			<a href="http://www.facebook.com">
+				<img src="img/icons/fb.png"></a>
+			<a href="http://www.linkedin.com">
+				<img src="img/icons/linkedin.png"></a>
+			<a href="http://www.twitter.com">
+				<img src="img/icons/twit.png"></a>
+			<a href="http://www.instagram.com">
+				<img src="img/icons/insta.png" id="insta_p"></a>
+		</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
